@@ -5,9 +5,9 @@ export default function HeroSection() {
     return (
         <div className="w-full h-screen flex items-center justify-center">
             <div className="w-1/2 flex flex-col gap-y-4">
-                <p className="text-secondary-text-500 text-lg">Hi, my name is</p>
-                <h1 className="text-primary-text-500 text-6xl font-bold">Mario Nikolov</h1>
-                <h2 className="text-secondary-text-400 text-5xl font-bold">Junior Software Engineer</h2>
+                <p className="text-secondary-text-500 text-lg mb-4">Hi, my name is</p>
+                <h1 className="text-primary-text-500 text-7xl font-bold">Mario Nikolov</h1>
+                <h2 className="text-secondary-text-400 text-6xl font-bold">Junior Software Engineer</h2>
                 <p className="max-w-96 text-secondary-text-700 mt-4">
                     I specialize in designing and developing of complex systems and applications. I always try to look for what is happening behind the scenes.
                 </p>
