@@ -1,8 +1,7 @@
+import LayoutHome from "@/components/LayoutHome";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hello World</h1>
-    </main>
+    <LayoutHome />
   );
 }
