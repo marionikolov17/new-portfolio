@@ -1,6 +1,7 @@
 import FloatingElements from "./floating-elements";
 import HeroSection from "./hero-section";
 import AboutSection from "./about-section";
+import ExperienceSection from "./experience-section";
 
 export default function LayoutHome() {
     return (
@@ -8,6 +9,7 @@ export default function LayoutHome() {
             <FloatingElements />
             <HeroSection />
             <AboutSection />
+            <ExperienceSection />
         </main>
     )
 }
