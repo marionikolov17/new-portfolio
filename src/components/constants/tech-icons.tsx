@@ -1,8 +1,24 @@
 export function GithubSvg({ className }: { className?: string }) {
-    return (
-        <svg className={className || ""} version="1.1" fill="currentColor" id="Layer_12" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="512px" height="512px" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve">
-            <path fillRule="evenodd" clipRule="evenodd" d="M192,368.004c0-8.844,7.156-16,16-16s16,7.156,16,16
+  return (
+    <svg
+      className={className || ''}
+      version="1.1"
+      fill="currentColor"
+      id="Layer_12"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      width="512px"
+      height="512px"
+      viewBox="0 0 512 512"
+      enableBackground="new 0 0 512 512"
+      xmlSpace="preserve"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M192,368.004c0-8.844,7.156-16,16-16s16,7.156,16,16
             s-7.156,16-16,16S192,376.848,192,368.004L192,368.004z M349.328,494.16c-4.266,1.219-8.672,2.094-13.328,2.094
             c-26.516,0-48-21.484-48-48v-58.188c0-20.094,12.898-37.156,30.797-43.438C353.164,335.082,384,306.082,384,272.004V240
             c0-15.164-6.188-29.285-16-41.367V162.5c0-17.668-14.328-23.719-32-13.496l-24.516,14.176C303.633,161.145,295.703,160,288,160h-64
@@ -19,16 +35,29 @@ export function GithubSvg({ className }: { className?: string }) {
             c32.02,0,27.445,64,72.012,64c17.668,0,32,14.328,32,32v28c0,15.453-12.527,28-28.004,28c-1.688,0-3.277-0.344-4.887-0.656
             C81.203,474.613,0,374.926,0,256C0,114.617,114.617,0,256,0s256,114.617,256,256C512,364.41,444.508,456.848,349.328,494.16
             L349.328,494.16z"
-            />
-        </svg>
-    )
+      />
+    </svg>
+  );
 }
 
 export function DemoArrowSvg({ className }: { className?: string }) {
-    return (
-        <svg className={className || ""} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778" />
-        </svg>
-
-    )
+  return (
+    <svg
+      className={className || ''}
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+      />
+    </svg>
+  );
 }
