@@ -3,6 +3,7 @@ import HeroSection from "./hero-section";
 import AboutSection from "./about-section";
 import ExperienceSection from "./experience-section";
 import ProjectsSection from "./projects-section";
+import ContactSection from "./contact-section";
 
 export default function LayoutHome() {
     return (
@@ -12,6 +13,7 @@ export default function LayoutHome() {
             <AboutSection />
             <ExperienceSection />
             <ProjectsSection />
+            <ContactSection />
         </main>
     )
 }
