@@ -4,6 +4,7 @@ import AboutSection from "./about-section";
 import ExperienceSection from "./experience-section";
 import ProjectsSection from "./projects-section";
 import ContactSection from "./contact-section";
+import Footer from "./footer";
 
 export default function LayoutHome() {
     return (
@@ -14,6 +15,7 @@ export default function LayoutHome() {
             <ExperienceSection />
             <ProjectsSection />
             <ContactSection />
+            <Footer />
         </main>
     )
 }
