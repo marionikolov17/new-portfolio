@@ -13,12 +13,12 @@ export default function LayoutHome() {
   const { isNavOpen } = useNavigation();
 
   return (
-    <main className="w-full min-h-screen overflow-x-hidden flex items-start bg-background-500">
+    <main className="w-full min-h-screen overflow-x-hidden scrollbar-hidden flex items-start bg-background-500">
       <Navigation />
+      <FloatingElements />
       <div
-        className={`w-full min-h-screen overflow-x-hidden bg-background-500 scrollbar-hidden transition-all duration-300 ease-in-out ${isNavOpen ? 'translate-x-32 blur-xs' : ''}`}
+        className={`w-full min-h-screen overflow-x-hidden transition-all duration-300 ease-in-out ${isNavOpen ? 'translate-x-32 blur-xs' : ''}`}
       >
-        <FloatingElements />
         <HeroSection />
         <AboutSection />
         <ExperienceSection />

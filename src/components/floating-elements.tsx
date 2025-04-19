@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SocialMediaButton from './util/social-media-button';
+import { useNavigation } from '@/context/navigation-context';
 
 export default function FloatingElements() {
   return (
@@ -11,8 +12,12 @@ export default function FloatingElements() {
 }
 
 function FloatingSocialMedia() {
+  const { isNavOpen } = useNavigation();
+
   return (
-    <div className="fixed bottom-0 left-0 ps-12 flex flex-col items-center h-max w-10 gap-y-4">
+    <div
+      className={`fixed bottom-0 left-0 ps-12 flex flex-col items-center h-max w-10 gap-y-4 transition-all duration-300 ease-in-out ${isNavOpen ? 'blur-xs' : ''}`}
+    >
       <SocialMediaButton
         icon="/icons/github.svg"
         href="https://github.com/marionikolov17"
@@ -31,8 +36,12 @@ function FloatingSocialMedia() {
 }
 
 function FloatingEmail() {
+  const { isNavOpen } = useNavigation();
+
   return (
-    <div className="fixed top-0 right-0 pe-12 flex flex-col items-center h-max w-10 gap-y-4">
+    <div
+      className={`fixed top-0 right-0 pe-12 flex flex-col items-center h-max w-10 gap-y-4 transition-all duration-300 ease-in-out ${isNavOpen ? 'blur-xs' : ''}`}
+    >
       <div className="w-[1px] h-24 bg-primary-text-500"></div>
       <Link
         href="mailto:marionikolovdev@gmail.com"
