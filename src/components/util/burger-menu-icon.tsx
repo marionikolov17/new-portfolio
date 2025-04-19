@@ -1,12 +1,12 @@
 import { useNavigation } from '@/context/navigation-context';
 
 export default function BurgerMenuIcon() {
-  const { isNavOpen, setIsNavOpen } = useNavigation();
+  const { isNavOpen, toggleNav } = useNavigation();
 
   return (
     <button
       className={`menu w-10 h-10 ${isNavOpen ? 'opened' : ''}`}
-      onClick={() => setIsNavOpen(!isNavOpen)}
+      onClick={toggleNav}
       aria-label="Main Menu"
     >
       <svg width="100" height="100" viewBox="0 0 100 100">

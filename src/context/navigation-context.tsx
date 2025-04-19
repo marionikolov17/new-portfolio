@@ -1,15 +1,9 @@
 'use client';
-import {
-  createContext,
-  useState,
-  Dispatch,
-  SetStateAction,
-  useContext,
-} from 'react';
+import { createContext, useState, useContext } from 'react';
 
 interface NavigationContextType {
   isNavOpen: boolean;
-  setIsNavOpen: Dispatch<SetStateAction<boolean>>;
+  toggleNav: () => void;
 }
 
 export const NavigationContext = createContext<NavigationContextType | null>(
@@ -23,8 +17,12 @@ export const NavigationProvider = ({
 }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
-    <NavigationContext.Provider value={{ isNavOpen, setIsNavOpen }}>
+    <NavigationContext.Provider value={{ isNavOpen, toggleNav }}>
       {children}
     </NavigationContext.Provider>
   );
