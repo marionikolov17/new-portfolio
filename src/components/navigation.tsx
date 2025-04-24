@@ -17,7 +17,9 @@ export default function Navigation() {
 
   return (
     <>
-      <div className="absolute lg:fixed top-0 left-0 mx-8 my-0 z-50">
+      <div
+        className={`${isNavOpen ? 'fixed' : 'absolute'} lg:fixed top-0 left-0 mx-8 my-0 z-50`}
+      >
         <BurgerMenuIcon />
       </div>
       <div
