@@ -16,19 +16,25 @@ import useClickOutside from '@/hooks/useClickOutside';
 
 export default function Navigation() {
   const navRef = useRef<HTMLDivElement>(null);
+  const burgerRef = useRef<HTMLDivElement>(null);
   const { isNavOpen, toggleNav } = useNavigation();
 
-  const handleClickOutside = useCallback(() => {
-    if (isNavOpen) {
-      toggleNav();
-    }
-  }, [isNavOpen, toggleNav]);
+  const handleClickOutside = useCallback(
+    (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (isNavOpen && !burgerRef.current?.contains(target)) {
+        toggleNav();
+      }
+    },
+    [isNavOpen, toggleNav],
+  );
 
   useClickOutside(navRef, handleClickOutside);
 
   return (
     <>
       <div
+        ref={burgerRef}
         className={`${isNavOpen ? 'fixed' : 'absolute'} lg:fixed top-0 left-0 mx-8 my-0 z-50`}
       >
         <BurgerMenuIcon />
