@@ -1,13 +1,13 @@
 export default function ContactSection() {
   return (
     <div className="w-full min-h-screen flex items-center justify-center">
-      <div className="w-[750px] flex flex-col gap-y-4 overflow-x-hidden">
+      <div className="w-full px-8 lg:px-0 lg:w-[750px] flex flex-col gap-y-4 overflow-x-hidden">
         <div className="py-2 flex">
-          <h2 className="text-5xl font-bold text-primary-text-500 capitalize">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-text-500 capitalize">
             Let&apos;s get in touch.
           </h2>
         </div>
-        <p className="text-secondary-text-500 text-base">
+        <p className="text-secondary-text-500 text-sm sm:text-base">
           Or you could send me an email on{' '}
           <span className="font-bold">marionikolovdev@gmail.com</span>
         </p>
@@ -18,7 +18,7 @@ export default function ContactSection() {
             id="name"
             name="name"
             required
-            className="w-full py-4 px-6 rounded-lg border border-background-100 text-white outline-none focus:bg-background-300"
+            className="w-full py-4 px-6 text-sm sm:text-base rounded-lg border border-background-100 text-white outline-none focus:bg-background-300"
           />
           <input
             type="email"
@@ -26,18 +26,18 @@ export default function ContactSection() {
             id="email"
             name="email"
             required
-            className="w-full py-4 px-6 rounded-lg border border-background-100 text-white outline-none focus:bg-background-300"
+            className="w-full py-4 px-6 text-sm sm:text-base rounded-lg border border-background-100 text-white outline-none focus:bg-background-300"
           />
           <textarea
             placeholder="Message"
             id="message"
             name="message"
             required
-            className="w-full py-6 px-6 rounded-lg border border-background-100 text-white outline-none focus:bg-background-300 resize-none"
+            className="w-full py-6 px-6 text-sm sm:text-base rounded-lg border border-background-100 text-white outline-none focus:bg-background-300 resize-none"
           />
           <button
             type="submit"
-            className="w-max py-4 px-10 cursor-pointer rounded-lg bg-primary-text-500 text-background-500 outline-none hover:bg-primary-text-600"
+            className="w-max py-4 px-10 cursor-pointer rounded-lg text-sm sm:text-base bg-primary-text-500 text-background-500 outline-none hover:bg-primary-text-600"
           >
             Send Message
           </button>
