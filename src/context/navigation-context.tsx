@@ -1,5 +1,5 @@
 'use client';
-import { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext, useCallback } from 'react';
 
 interface NavigationContextType {
   isNavOpen: boolean;
@@ -17,9 +17,9 @@ export const NavigationProvider = ({
 }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const toggleNav = () => {
+  const toggleNav = useCallback(() => {
     setIsNavOpen(!isNavOpen);
-  };
+  }, [isNavOpen]);
 
   return (
     <NavigationContext.Provider value={{ isNavOpen, toggleNav }}>

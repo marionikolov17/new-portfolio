@@ -11,9 +11,20 @@ import {
 } from 'react-icons/io5';
 import { IconType } from 'react-icons';
 import { CodeForkSvg } from './constants/tech-icons';
+import { useCallback, useRef } from 'react';
+import useClickOutside from '@/hooks/useClickOutside';
 
 export default function Navigation() {
-  const { isNavOpen } = useNavigation();
+  const navRef = useRef<HTMLDivElement>(null);
+  const { isNavOpen, toggleNav } = useNavigation();
+
+  const handleClickOutside = useCallback(() => {
+    if (isNavOpen) {
+      toggleNav();
+    }
+  }, [isNavOpen, toggleNav]);
+
+  useClickOutside(navRef, handleClickOutside);
 
   return (
     <>
@@ -24,6 +35,7 @@ export default function Navigation() {
       </div>
       <div
         className={`fixed top-0 left-0 h-screen w-64 z-40 transition-all duration-300 ease-in-out ${isNavOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        ref={navRef}
       >
         <div className="w-full h-full flex flex-col bg-background-300 z-30 transition-all duration-300 ease-in-out">
           <div className="grow flex flex-col gap-y-3 items-center mt-24 px-4">

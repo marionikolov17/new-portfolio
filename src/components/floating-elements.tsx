@@ -16,7 +16,7 @@ function FloatingSocialMedia() {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 ps-12 hidden lg:flex flex-col items-center h-max w-10 gap-y-4 transition-all duration-300 ease-in-out ${isNavOpen ? 'blur-xs' : ''}`}
+      className={`fixed z-10 bottom-0 left-0 ps-12 hidden lg:flex flex-col items-center h-max w-10 gap-y-4 transition-all duration-300 ease-in-out ${isNavOpen ? 'blur-xs' : ''}`}
     >
       <SocialMediaButton
         icon="/icons/github.svg"
@@ -40,7 +40,7 @@ function FloatingEmail() {
 
   return (
     <div
-      className={`fixed top-0 right-0 pe-12 hidden lg:flex flex-col items-center h-max w-10 gap-y-4 transition-all duration-300 ease-in-out ${isNavOpen ? 'blur-xs' : ''}`}
+      className={`fixed z-10 top-0 right-0 pe-12 hidden lg:flex flex-col items-center h-max w-10 gap-y-4 transition-all duration-300 ease-in-out ${isNavOpen ? 'blur-xs' : ''}`}
     >
       <div className="w-[1px] h-24 bg-primary-text-500"></div>
       <Link
