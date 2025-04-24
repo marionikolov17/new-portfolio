@@ -23,18 +23,18 @@ export default function ExperienceCard({
   links,
 }: InputProps) {
   return (
-    <div className="w-full h-max flex p-6 rounded-lg">
+    <div className="w-full h-max flex flex-col gap-y-4 sm:flex-row p-2 lg:p-6 rounded-lg">
       <div className="w-52 shrink-0 flex ps-2">
         <p className="text-secondary-text-500 text-sm">{period}</p>
       </div>
       <div className="flex flex-col grow px-2">
         <div className="flex items-center">
-          <h3 className="text-primary-text-500 text-lg font-bold">
+          <h3 className="text-primary-text-500 text-base sm:text-lg font-bold">
             {jobTitle}
           </h3>
           <Link
             href={companyLink}
-            className="ms-2 text-blue-500 text-lg hover:text-blue-600 transition-all duration-300"
+            className="ms-2 text-blue-500 text-sm sm:text-lg hover:text-blue-600 transition-all duration-300"
           >
             {companyName}
           </Link>

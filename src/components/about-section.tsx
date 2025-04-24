@@ -5,7 +5,7 @@ export default function AboutSection() {
     <div className="w-full min-h-screen flex items-center justify-center">
       <div className="w-full px-8 sm:px-0 sm:w-[70%] xl:w-1/2 flex flex-col">
         <SectionDelimiter title="About Me" number="01" />
-        <div className="w-full flex flex-col-reverse md:flex-row gap-y-8">
+        <div className="w-full flex flex-col-reverse md:flex-row gap-y-8 mt-8 sm:mt-0">
           <div className="grow shrink-0 max-w-full md:max-w-[60%] flex flex-col md:pe-12">
             <p className="text-secondary-text-500 text-justify">
               Hello! I am Mario Nikolov. I enjoy solving problems and learning
