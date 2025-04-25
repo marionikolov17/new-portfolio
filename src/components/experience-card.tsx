@@ -1,6 +1,4 @@
-'use client';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 interface InputProps {
   period: string;
@@ -25,12 +23,7 @@ export default function ExperienceCard({
   links,
 }: InputProps) {
   return (
-    <motion.div
-      className="w-full h-max flex flex-col gap-y-4 sm:flex-row p-2 lg:p-6 rounded-lg hover:bg-background-300 transition-all duration-300"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div className="w-full h-max flex flex-col gap-y-4 sm:flex-row p-2 lg:p-6 rounded-lg hover:bg-background-300 transition-all duration-300">
       <div className="w-52 shrink-0 flex ps-2">
         <p className="text-secondary-text-500 text-sm">{period}</p>
       </div>
@@ -61,7 +54,7 @@ export default function ExperienceCard({
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
