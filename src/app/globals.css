@@ -52,6 +52,10 @@
   --color-accent-900: #686868;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }

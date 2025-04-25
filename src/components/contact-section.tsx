@@ -1,6 +1,9 @@
 export default function ContactSection() {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center">
+    <div
+      className="w-full min-h-screen flex items-center justify-center"
+      id="contact"
+    >
       <div className="w-full px-8 lg:px-0 lg:w-[750px] flex flex-col gap-y-4 overflow-x-hidden">
         <div className="py-2 flex">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-text-500 capitalize">

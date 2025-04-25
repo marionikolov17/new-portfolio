@@ -7,7 +7,10 @@ export default function HeroSection() {
   const { containerRef } = useFloatingBackground();
 
   return (
-    <div className="w-full h-screen flex items-center justify-center relative">
+    <div
+      className="w-full h-screen flex items-center justify-center relative"
+      id="hero"
+    >
       <div
         className="absolute top-0 left-0 w-full h-full pointer-events-none"
         ref={containerRef}
@@ -27,7 +30,7 @@ export default function HeroSection() {
           applications. I always try to look for what is happening behind the
           scenes.
         </p>
-        <Link href="/" className="flex items-center gap-x-4 mt-8">
+        <Link href="#about" className="flex items-center gap-x-4 mt-8">
           <p className="text-primary-text-500 capitalize hover:underline text-sm">
             See more about me
           </p>

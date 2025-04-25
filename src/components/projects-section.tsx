@@ -6,7 +6,10 @@ import { projects } from '@/constants/projects';
 
 export default function ProjectsSection() {
   return (
-    <div className="w-full min-h-screen my-8 flex items-center justify-center">
+    <div
+      className="w-full min-h-screen my-8 flex items-center justify-center"
+      id="projects"
+    >
       <div className="w-full px-8 lg:px-0 lg:w-[75%] xl:w-[65%] 2xl:w-1/2 flex flex-col gap-y-4 overflow-x-hidden">
         <SectionDelimiter title="Projects" number="03" />
         {projects.map((project, index) => (

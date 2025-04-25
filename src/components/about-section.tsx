@@ -2,7 +2,10 @@ import SectionDelimiter from './util/section-delimiter';
 
 export default function AboutSection() {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center">
+    <div
+      className="w-full min-h-screen flex items-center justify-center"
+      id="about"
+    >
       <div className="w-full px-8 sm:px-0 sm:w-[70%] xl:w-1/2 flex flex-col">
         <SectionDelimiter title="About Me" number="01" />
         <div className="w-full flex flex-col-reverse md:flex-row gap-y-8 mt-8 sm:mt-0">

@@ -45,15 +45,19 @@ export default function Navigation() {
       >
         <div className="w-full h-full flex flex-col bg-background-300 z-30 transition-all duration-300 ease-in-out">
           <div className="grow flex flex-col gap-y-3 items-center mt-24 px-4">
-            <NavItem href="/" Icon={IoHomeOutline} text="Home" />
+            <NavItem href="#hero" Icon={IoHomeOutline} text="Home" />
             <NavItem
-              href="/"
+              href="#about"
               Icon={IoInformationCircleOutline}
               text="About Me"
             />
-            <NavItem href="/" Icon={IoBriefcaseOutline} text="Experience" />
-            <NavItem href="/" Icon={IoCodeOutline} text="Projects" />
-            <NavItem href="/" Icon={IoMailOutline} text="Contact" />
+            <NavItem
+              href="#experience"
+              Icon={IoBriefcaseOutline}
+              text="Experience"
+            />
+            <NavItem href="#projects" Icon={IoCodeOutline} text="Projects" />
+            <NavItem href="#contact" Icon={IoMailOutline} text="Contact" />
             <NavItem
               href="/"
               Icon={IoDocumentTextOutline}
@@ -86,10 +90,13 @@ function NavItem({
   Icon: IconType;
   text: string;
 }) {
+  const { toggleNav } = useNavigation();
+
   return (
     <Link
       href={href}
       className="flex w-full items-center justify-start gap-x-4 py-2.5 px-4 hover:bg-background-400 transition-all duration-300 ease-in-out rounded-lg"
+      onClick={toggleNav}
     >
       <Icon className="text-white text-xl" />
       <p className="text-white text-base">{text}</p>
