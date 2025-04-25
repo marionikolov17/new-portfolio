@@ -4,7 +4,6 @@ import { useNavigation } from '@/context/navigation-context';
 import {
   IoBriefcaseOutline,
   IoCodeOutline,
-  IoDocumentTextOutline,
   IoHomeOutline,
   IoInformationCircleOutline,
   IoMailOutline,
@@ -58,11 +57,11 @@ export default function Navigation() {
             />
             <NavItem href="#projects" Icon={IoCodeOutline} text="Projects" />
             <NavItem href="#contact" Icon={IoMailOutline} text="Contact" />
-            <NavItem
+            {/* <NavItem
               href="/"
               Icon={IoDocumentTextOutline}
               text="Certificates"
-            />
+            /> */}
           </div>
           <div className="w-full h-20 bg-background-400 flex items-center py-4 px-4 gap-x-4">
             <div className="h-full w-14 rounded-lg flex items-center justify-center border border-background-100">

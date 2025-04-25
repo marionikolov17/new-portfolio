@@ -39,7 +39,10 @@ export default function ExperienceCard({
             {companyName}
           </Link>
         </div>
-        <p className="text-secondary-text-500 text-sm mt-4">{description}</p>
+        <p
+          className="text-secondary-text-500 text-sm mt-4"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
         <div className="flex flex-wrap gap-2 mt-4">
           {links &&
             links.length > 0 &&
