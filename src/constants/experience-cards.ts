@@ -8,7 +8,8 @@ export const experienceCards = [
     companyLink: 'https://www.nibnab.ai',
     description: dedent`
             Working towards launching a new innovative product with cutting edge technologies.
-            Making scalable, maintainable and performant code. Learning to design and architect large scale systems.
+            Making scalable, maintainable and performant code. <br /> <br />
+            Learning to design and architect large scale systems.
             Actively participating in code reviews and contributing to the overall development process.
         `,
     technologies: [
