@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import SectionDelimiter from './util/section-delimiter';
 
 export default function AboutSection() {
@@ -34,7 +35,15 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="grow shrink-0 relative flex justify-center md:justify-start">
-            <div className="w-64 h-64 z-10 flex items-center justify-center overflow-hidden rounded-lg relative bg-primary-text-500"></div>
+            <div className="w-64 h-64 z-10 flex items-center justify-center overflow-hidden rounded-lg relative bg-primary-text-500">
+              <Image
+                src="/images/mario-for-portfolio.png"
+                alt="Mario Nikolov"
+                width={256}
+                height={256}
+                className="w-full h-full object-contain"
+              />
+            </div>
             {/* <div className="w-64 h-64 rounded-lg border-2 border-blue-500 absolute right-24 top-6 z-0"></div> */}
           </div>
         </div>

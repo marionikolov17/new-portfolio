@@ -1,8 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import Link from 'next/link';
 import SectionDelimiter from './util/section-delimiter';
 import { DemoArrowSvg, GithubSvg } from './constants/tech-icons';
 import { projects } from '@/constants/projects';
+import Image from 'next/image';
 
 export default function ProjectsSection() {
   return (
@@ -46,8 +46,16 @@ function ProjectCard({
     <div
       className={`w-full min-h-[350px] gap-4 lg:gap-0 mb-10 sm:mb-20 flex flex-col sm:flex-row overflow-x-hidden ${shouldInvert ? 'flex-col-reverse sm:flex-row-reverse' : ''}`}
     >
-      <div className="w-full sm:w-1/2 lg:w-[55%] grow shrink-0 overflow-hidden rounded-lg h-[300px] sm:h-[350px]">
-        <div className="w-full h-full bg-primary-text-500"></div>
+      <div className="w-full sm:w-1/2 lg:w-[55%] grow shrink-0 overflow-hidden rounded-lg h-[280px] sm:h-[350px]">
+        <div className="w-full h-full flex overflow-hidden rounded-lg">
+          <Image
+            src={imageUrl}
+            alt={title}
+            width={3000}
+            height={3000}
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
       </div>
       <div
         className={`w-full sm:w-[45%] grow shrink-0 ${shouldInvert ? 'text-left' : 'text-right'} relative h-max flex flex-col justify-center items-end ${shouldInvert ? 'items-start' : ''}`}

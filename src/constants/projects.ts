@@ -4,7 +4,7 @@ export const projects = [
     title: 'Silencerer.com',
     description:
       'Silencerer is a platform that allows you to block annoying ads on websites.',
-    imageUrl: '/images/projects/silencerer.png',
+    imageUrl: '/images/projects/silencerer.jpg',
     technologies: [
       'TypeScript',
       'TailwindCSS',
@@ -23,7 +23,7 @@ export const projects = [
     title: 'Portfolio Administrator',
     description:
       'Portfolio Administrator is a platform that allows you to manage your portfolio.',
-    imageUrl: '/images/projects/portfolio-administrator.png',
+    imageUrl: '/images/projects/portfolio-administrator.jpg',
     technologies: [
       'TypeScript',
       'TailwindCSS',
