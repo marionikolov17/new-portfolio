@@ -1,40 +1,39 @@
+import dedent from 'dedent';
+
 export const projects = [
   {
     type: 'Open-Source Application',
     title: 'Silencerer.com',
-    description:
-      'Silencerer is a platform that allows you to block annoying ads on websites.',
+    description: dedent`
+      Silencerer is a lightweight platform for fast and efficient audio and video silence removal.
+      It uses custom algorithm for very precise silence detection and removal.
+      It supports a wide range of file formats and can be used in a wide range of use cases.
+    `,
     imageUrl: '/images/projects/silencerer.jpg',
     technologies: [
       'TypeScript',
+      'Next.js',
+      'XState',
+      'Digital Audio',
       'TailwindCSS',
-      'React',
-      'Node.js',
-      'Express',
-      'MongoDB',
     ],
     links: {
       github: 'https://github.com/silencerer',
-      demo: 'https://silencerer.com',
+      demo: '/',
     },
   },
   {
     type: 'Web Application',
     title: 'Portfolio Administrator',
-    description:
-      'Portfolio Administrator is a platform that allows you to manage your portfolio.',
+    description: dedent`
+      Portfolio Administrator is a platform that allows you to manage and monitor your portfolio.
+      It is using advanced performance techniques to provide a fast and efficient service.
+    `,
     imageUrl: '/images/projects/portfolio-administrator.jpg',
-    technologies: [
-      'TypeScript',
-      'TailwindCSS',
-      'React',
-      'Node.js',
-      'Express',
-      'MongoDB',
-    ],
+    technologies: ['TypeScript', 'React', 'TailwindCSS', 'Appwrite'],
     links: {
-      github: 'https://github.com/silencerer',
-      demo: 'https://silencerer.com',
+      github: 'https://github.com/marionikolov17/Portfolio-Administrator',
+      demo: 'https://portfolio-administrator.onrender.com/',
     },
   },
 ];
