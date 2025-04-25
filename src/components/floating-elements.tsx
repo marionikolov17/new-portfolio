@@ -24,11 +24,11 @@ function FloatingSocialMedia() {
       />
       <SocialMediaButton
         icon="/icons/linkedin.svg"
-        href="https://github.com/marionikolov17"
+        href="https://www.linkedin.com/in/marionikolovdev"
       />
       <SocialMediaButton
         icon="/icons/instagram.svg"
-        href="https://github.com/marionikolov17"
+        href="https://www.instagram.com/marionikolov17"
       />
       <div className="w-[1px] h-32 bg-primary-text-500"></div>
     </div>

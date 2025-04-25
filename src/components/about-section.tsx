@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import SectionDelimiter from './util/section-delimiter';
 
 export default function AboutSection() {
@@ -10,7 +11,12 @@ export default function AboutSection() {
       <div className="w-full px-8 sm:px-0 sm:w-[70%] xl:w-1/2 flex flex-col">
         <SectionDelimiter title="About Me" number="01" />
         <div className="w-full flex flex-col-reverse md:flex-row gap-y-8 mt-8 sm:mt-0">
-          <div className="grow shrink-0 max-w-full md:max-w-[60%] flex flex-col md:pe-12">
+          <motion.div
+            className="grow shrink-0 max-w-full md:max-w-[60%] flex flex-col md:pe-12"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <p className="text-secondary-text-500 text-justify">
               Hello! I am Mario Nikolov. I enjoy solving problems and learning
               new things along the way. My passion is designing systems and
@@ -33,9 +39,14 @@ export default function AboutSection() {
               <SkillCard skill="Node.js" />
               <SkillCard skill="Tailwind CSS" />
             </div>
-          </div>
+          </motion.div>
           <div className="grow shrink-0 relative flex justify-center md:justify-start">
-            <div className="w-64 h-64 z-10 flex items-center justify-center overflow-hidden rounded-lg relative bg-primary-text-500">
+            <motion.div
+              className="w-64 h-64 z-10 flex items-center justify-center overflow-hidden rounded-lg relative bg-primary-text-500"
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <Image
                 src="/images/mario-for-portfolio.png"
                 alt="Mario Nikolov"
@@ -43,7 +54,7 @@ export default function AboutSection() {
                 height={256}
                 className="w-full h-full object-contain"
               />
-            </div>
+            </motion.div>
             {/* <div className="w-64 h-64 rounded-lg border-2 border-blue-500 absolute right-24 top-6 z-0"></div> */}
           </div>
         </div>

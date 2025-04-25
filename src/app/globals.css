@@ -113,3 +113,19 @@ body::-webkit-scrollbar {
   stroke-dashoffset: -134;
   stroke-width: 6;
 }
+
+.arrow {
+  animation: arrow-right 2s infinite;
+}
+
+@keyframes arrow-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

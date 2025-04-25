@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 import SectionDelimiter from './util/section-delimiter';
 import { DemoArrowSvg, GithubSvg } from './constants/tech-icons';
 import { projects } from '@/constants/projects';
-import Image from 'next/image';
 
 export default function ProjectsSection() {
   return (
@@ -43,8 +44,11 @@ function ProjectCard({
   const shouldInvert = index % 2 !== 0;
 
   return (
-    <div
+    <motion.div
       className={`w-full min-h-[350px] gap-4 lg:gap-0 mb-10 sm:mb-20 flex flex-col sm:flex-row overflow-x-hidden ${shouldInvert ? 'flex-col-reverse sm:flex-row-reverse' : ''}`}
+      initial={{ opacity: 0, x: shouldInvert ? 100 : -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
     >
       <div className="w-full sm:w-1/2 lg:w-[55%] grow shrink-0 overflow-hidden rounded-lg h-[280px] sm:h-[350px]">
         <div className="w-full h-full flex overflow-hidden rounded-lg">
@@ -96,6 +100,6 @@ function ProjectCard({
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
