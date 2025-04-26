@@ -37,10 +37,9 @@ export const experienceCards = [
     companyLink: 'https://www.nibnab.ai',
     description: dedent`
             ✔ Improved an existing codebase. <br />
-            ✔ Leveraged the latest LLM models and tools. <br />
-            ✔ Created a tool for massive content generation with AI. <br />
-            ✔ Learned how to manipulate digital audio data. <br /> <br />
-            ✔ Managed real-world problems - synchronized parallel processing, memory management, services ratelimiting and failures.
+            ✔ Leveraged the latest LLM models and tools. <br /> <br />
+            ✔ Learned how to manipulate digital audio data. <br /> 
+            ✔ Managed real-world problems - memory management, services ratelimiting and failures, etc.
         `,
     technologies: [
       'TypeScript',
