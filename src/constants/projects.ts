@@ -6,8 +6,7 @@ export const projects = [
     title: 'Silencerer.com',
     description: dedent`
       Silencerer is a lightweight platform for fast and efficient audio and video silence removal.
-      It uses custom algorithm for very precise silence detection and removal.
-      It supports a wide range of file formats and can be used in a wide range of use cases.
+      It uses custom algorithms for very precise silence detection and removal.
     `,
     imageUrl: '/images/projects/silencerer.jpg',
     technologies: [

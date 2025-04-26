@@ -23,7 +23,7 @@ export default function ExperienceCard({
   links,
 }: InputProps) {
   return (
-    <div className="w-full h-max flex flex-col gap-y-4 sm:flex-row p-2 lg:p-6 rounded-lg hover:bg-background-300 transition-all duration-300">
+    <div className="w-full h-max flex flex-col gap-y-4 sm:flex-row sm:p-2 lg:p-6 rounded-lg hover:bg-background-300 transition-all duration-300">
       <div className="w-52 shrink-0 flex ps-2">
         <p className="text-secondary-text-500 text-sm">{period}</p>
       </div>
@@ -40,7 +40,7 @@ export default function ExperienceCard({
           </Link>
         </div>
         <p
-          className="text-secondary-text-500 text-sm mt-4 leading-6"
+          className="text-secondary-text-500 text-base mt-4 leading-6"
           dangerouslySetInnerHTML={{ __html: description }}
         />
         <div className="flex flex-wrap gap-2 mt-4">

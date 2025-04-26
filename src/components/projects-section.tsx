@@ -69,7 +69,7 @@ function ProjectCard({
           {title}
         </h1>
         <div className="mt-8 relative px-0 py-4 lg:px-4 h-max">
-          <p className="text-sm text-primary-text-500 z-10 relative">
+          <p className="text-base text-primary-text-500 z-10 relative">
             {description}
           </p>
           <div
