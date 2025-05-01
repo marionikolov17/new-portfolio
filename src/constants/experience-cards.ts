@@ -36,10 +36,10 @@ export const experienceCards = [
     companyName: '@nibnab.ai',
     companyLink: 'https://www.nibnab.ai',
     description: dedent`
-            ✔ Improved an existing codebase. <br />
-            ✔ Leveraged the latest LLM models and tools. <br /> <br />
-            ✔ Learned how to manipulate digital audio data. <br /> 
-            ✔ Managed real-world problems - memory management, services ratelimiting and failures, etc.
+            Improved an existing codebase.
+            Leveraged the latest LLM models and tools. <br /> <br />
+            Learned how to manipulate digital audio data.
+            Managed real-world problems - memory management, services ratelimiting and failures, etc.
         `,
     technologies: [
       'TypeScript',
