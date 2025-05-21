@@ -18,7 +18,7 @@ export const projects = [
     ],
     links: {
       github: 'https://github.com/silencerer',
-      demo: '/',
+      demo: 'https://www.silencerer.com',
     },
   },
   {
