@@ -50,14 +50,14 @@ function ProjectCard({
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="w-full sm:w-1/2 lg:w-[55%] grow shrink-0 overflow-hidden rounded-lg h-[280px] sm:h-[350px]">
-        <div className="w-full h-full flex overflow-hidden rounded-lg">
+      <div className="w-full sm:w-1/2 lg:w-[55%] grow shrink-0 overflow-hidden rounded-lg h-auto">
+        <div className="w-full h-auto flex overflow-hidden rounded-lg">
           <Image
             src={imageUrl}
             alt={title}
             width={3000}
             height={3000}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-auto object-center"
           />
         </div>
       </div>
@@ -89,12 +89,14 @@ function ProjectCard({
           <Link
             className="text-primary-text-500 hover:text-blue-500 transition-all duration-300"
             href={links.github}
+            target="_blank"
           >
             <GithubSvg className="w-6 h-6" />
           </Link>
           <Link
             className="text-primary-text-500 hover:text-blue-500 transition-all duration-300"
             href={links.demo}
+            target="_blank"
           >
             <DemoArrowSvg className="w-6 h-6" />
           </Link>
