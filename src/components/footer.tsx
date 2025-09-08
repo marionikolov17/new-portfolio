@@ -18,7 +18,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-primary-text-500">
               Mario Nikolov
             </h3>
-            <p className="text-secondary-text-500 text-sm leading-relaxed">
+            <p className="text-secondary-text-500 text-base leading-relaxed">
               Junior Software Engineer passionate about creating innovative
               solutions and building scalable applications.
             </p>
@@ -46,31 +46,31 @@ export default function Footer() {
             <nav className="flex flex-col space-y-2">
               <Link
                 href="#hero"
-                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-sm"
+                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-base"
               >
                 Home
               </Link>
               <Link
                 href="#about"
-                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-sm"
+                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-base"
               >
                 About
               </Link>
               <Link
                 href="#experience"
-                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-sm"
+                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-base"
               >
                 Experience
               </Link>
               <Link
                 href="#projects"
-                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-sm"
+                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-base"
               >
                 Projects
               </Link>
               <Link
                 href="#contact"
-                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-sm"
+                className="text-secondary-text-500 hover:text-primary-text-500 transition-colors text-base"
               >
                 Contact
               </Link>
@@ -83,17 +83,17 @@ export default function Footer() {
               Get In Touch
             </h4>
             <div className="space-y-2">
-              <p className="text-secondary-text-500 text-sm">
+              <p className="text-secondary-text-500 text-base">
                 Email:{' '}
                 <span className="text-primary-text-500">
                   marionikolovdev@gmail.com
                 </span>
               </p>
-              <p className="text-secondary-text-500 text-sm">
+              <p className="text-secondary-text-500 text-base">
                 Location:{' '}
                 <span className="text-primary-text-500">Bulgaria</span>
               </p>
-              <p className="text-secondary-text-500 text-sm">
+              <p className="text-secondary-text-500 text-base">
                 Status:{' '}
                 <span className="text-green-400">
                   Available for opportunities

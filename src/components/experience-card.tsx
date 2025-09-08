@@ -48,7 +48,7 @@ export default function ExperienceCard({
 
         {/* Description */}
         <p
-          className="text-secondary-text-500 text-sm mt-3 leading-6"
+          className="text-secondary-text-500 text-base mt-3 leading-6"
           dangerouslySetInnerHTML={{ __html: description }}
         />
 
