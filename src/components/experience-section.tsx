@@ -9,7 +9,7 @@ export default function ExperienceSection() {
       id="experience"
     >
       <div className="w-full px-8 md:px-0 md:w-[750px] flex flex-col gap-y-4 overflow-x-hidden">
-        <SectionDelimiter title="Experience" number="02" />
+        <SectionDelimiter title="Experience" number="03" />
         {experienceCards.map((card) => (
           <ExperienceCard key={card.period} {...card} />
         ))}
