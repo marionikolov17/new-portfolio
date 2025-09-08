@@ -30,7 +30,7 @@ export const projects = [
       'TailwindCSS',
     ],
     links: {
-      github: 'https://github.com/silencerer',
+      github: 'https://github.com/marionikolov17/silencerer',
       demo: 'https://www.silencerer.com',
     },
   },

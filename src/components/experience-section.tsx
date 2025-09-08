@@ -9,7 +9,7 @@ export default function ExperienceSection() {
       id="experience"
     >
       <div className="w-full max-w-4xl px-6 md:px-8 flex flex-col gap-y-4">
-        <SectionDelimiter title="Experience" number="03" />
+        <SectionDelimiter title="Experience" number="02" />
 
         {/* Timeline container */}
         <div className="relative mt-8">

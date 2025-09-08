@@ -12,7 +12,7 @@ export default function ProjectsSection() {
       id="projects"
     >
       <div className="w-full px-8 lg:px-0 lg:w-[75%] xl:w-[65%] 2xl:w-1/2 flex flex-col gap-y-12">
-        <SectionDelimiter title="Projects" number="04" />
+        <SectionDelimiter title="Projects" number="03" />
         <div className="space-y-20">
           {projects.map((project, index) => (
             <ProjectCard key={index} index={index} {...project} />

@@ -41,7 +41,7 @@ export default function ContactSection() {
         viewport={{ once: true, margin: '-100px' }}
       >
         <motion.div variants={itemVariants}>
-          <SectionDelimiter title="Get In Touch" number="05" />
+          <SectionDelimiter title="Get In Touch" number="04" />
         </motion.div>
 
         {/* Hero Call to Action */}
