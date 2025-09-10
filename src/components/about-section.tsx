@@ -87,12 +87,21 @@ export default function AboutSection() {
               className="mt-8 w-full flex items-center gap-3 flex-wrap"
               variants={itemVariants}
             >
-              <SkillCard skill="JavaScript" icon="🟨" />
-              <SkillCard skill="TypeScript" icon="🔷" />
-              <SkillCard skill="React" icon="⚛️" />
-              <SkillCard skill="Next.js" icon="▲" />
-              <SkillCard skill="Node.js" icon="🟢" />
-              <SkillCard skill="Tailwind CSS" icon="🎨" />
+              {[
+                { skill: 'JavaScript', icon: '🟨' },
+                { skill: 'TypeScript', icon: '🔷' },
+                { skill: 'React', icon: '⚛️' },
+                { skill: 'Next.js', icon: '▲' },
+                { skill: 'Node.js', icon: '🟢' },
+                { skill: 'Tailwind CSS', icon: '🎨' },
+              ].map((skillData, index) => (
+                <div
+                  key={index}
+                  style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+                >
+                  <SkillCard skill={skillData.skill} icon={skillData.icon} />
+                </div>
+              ))}
             </motion.div>
           </motion.div>
 
@@ -163,27 +172,22 @@ export default function AboutSection() {
 
 function SkillCard({ skill, icon }: { skill: string; icon: string }) {
   return (
-    <motion.div
-      className="group py-3 px-6 rounded-full bg-gradient-to-r from-background-300 to-background-400 flex items-center justify-center gap-2 border border-border-500 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
-      whileHover={{
-        scale: 1.05,
-        y: -2,
-        boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)',
+    <div
+      className="group py-3 px-6 rounded-full bg-gradient-to-r from-background-300 to-background-400 flex items-center justify-center gap-2 border border-border-500 shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer will-change-auto"
+      style={{
+        animation: `fadeInScale 0.4s ease-out forwards`,
+        opacity: 0,
       }}
-      whileTap={{ scale: 0.95 }}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
     >
-      <span className="text-lg group-hover:scale-110 transition-transform duration-300">
+      <span className="text-lg group-hover:scale-105 transition-transform duration-200">
         {icon}
       </span>
-      <span className="text-primary-text-300 text-sm font-medium group-hover:text-primary-text-100 transition-colors duration-300">
+      <span className="text-primary-text-300 text-sm font-medium group-hover:text-primary-text-100 transition-colors duration-200">
         {skill}
       </span>
 
       {/* Subtle glow effect */}
-      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm -z-10" />
-    </motion.div>
+      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10 hidden md:block" />
+    </div>
   );
 }

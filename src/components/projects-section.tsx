@@ -71,19 +71,19 @@ function ProjectCard({
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           {/* Floating project type badge */}
-          <div className="absolute top-4 left-4 transform -translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-            <span className="px-3 py-1 bg-blue-500/90 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+          <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 hidden md:block">
+            <span className="px-3 py-1 bg-blue-500/90 text-white text-xs font-medium rounded-full">
               {type}
             </span>
           </div>
 
           {/* Quick action buttons */}
-          <div className="absolute top-4 right-4 flex gap-2 transform translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <div className="absolute top-4 right-4 gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 hidden md:flex">
             {links.github && (
               <Link
                 href={links.github}
                 target="_blank"
-                className="p-2 bg-black/70 backdrop-blur-sm rounded-lg hover:bg-blue-500/80 transition-colors duration-200"
+                className="p-2 bg-black/70 rounded-lg hover:bg-blue-500/80 transition-colors duration-200"
               >
                 <GithubSvg className="w-4 h-4 text-white" />
               </Link>
@@ -91,7 +91,7 @@ function ProjectCard({
             <Link
               href={links.demo}
               target="_blank"
-              className="p-2 bg-black/70 backdrop-blur-sm rounded-lg hover:bg-blue-500/80 transition-colors duration-200"
+              className="p-2 bg-black/70 rounded-lg hover:bg-blue-500/80 transition-colors duration-200"
             >
               <DemoArrowSvg className="w-4 h-4 text-white" />
             </Link>
@@ -133,7 +133,7 @@ function ProjectCard({
           </p>
 
           {/* Subtle background card */}
-          <div className="absolute inset-0 bg-background-200/30 backdrop-blur-sm rounded-lg p-4 -m-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+          <div className="absolute inset-0 bg-background-200/30 rounded-lg p-4 -m-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10 hidden md:block"></div>
         </motion.div>
 
         {/* Technology Stack */}
@@ -142,18 +142,20 @@ function ProjectCard({
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           {technologies.map((technology, techIndex) => (
-            <motion.span
+            <span
               key={techIndex}
-              className="px-4 py-2 text-sm font-medium text-secondary-text-300 bg-background-300/80 border border-border-500/30 rounded-full hover:border-blue-500/50 hover:text-blue-300 hover:bg-blue-500/10 transition-all duration-200 cursor-default"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: 0.5 + techIndex * 0.05 }}
-              whileHover={{ scale: 1.05 }}
+              className="px-4 py-2 text-sm font-medium text-secondary-text-300 bg-background-300/80 border border-border-500/30 rounded-full hover:border-blue-500/50 hover:text-blue-300 hover:bg-blue-500/10 transition-colors duration-200 cursor-default will-change-auto"
+              style={{
+                animationDelay: `${0.1 + techIndex * 0.05}s`,
+                animation: `fadeInUp 0.4s ease-out forwards`,
+                opacity: 0,
+              }}
             >
               {technology}
-            </motion.span>
+            </span>
           ))}
         </motion.div>
 

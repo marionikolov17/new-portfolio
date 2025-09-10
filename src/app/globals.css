@@ -186,3 +186,39 @@ body::-webkit-scrollbar {
 .animate-pulse-glow {
   animation: pulse-glow 2s infinite;
 }
+
+/* Mobile-optimized animations */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Optimize animations for mobile */
+
+@media (max-width: 768px) {
+  * {
+    animation-duration: 0.3s !important;
+  }
+  .motion-reduce {
+    animation: none !important;
+    transition: none !important;
+  }
+}
