@@ -62,7 +62,7 @@ export default function ExperienceCard({
         )}
 
         {/* Technologies */}
-        <div className="flex flex-wrap gap-2 mt-3">
+        <div className="flex flex-wrap gap-2 mt-6">
           {technologies.map((technology) => (
             <TechnologyCard key={technology} name={technology} />
           ))}

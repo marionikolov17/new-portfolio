@@ -90,10 +90,6 @@ export default function Footer() {
                 </span>
               </p>
               <p className="text-secondary-text-500 text-base">
-                Location:{' '}
-                <span className="text-primary-text-500">Bulgaria</span>
-              </p>
-              <p className="text-secondary-text-500 text-base">
                 Status:{' '}
                 <span className="text-green-400">
                   Available for opportunities
