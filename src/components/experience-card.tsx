@@ -33,12 +33,12 @@ export default function ExperienceCard({
       <div className="flex flex-col grow">
         {/* Job title and company */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
-          <h3 className="text-primary-text-500 text-lg font-bold">
+          <h3 className="text-primary-text-500 text-xl font-bold">
             {jobTitle}
           </h3>
           <Link
             href={companyLink}
-            className="text-blue-500 text-base hover:text-blue-400 transition-colors duration-300 w-fit"
+            className="text-blue-500 text-lg hover:text-blue-400 transition-colors duration-300 w-fit"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -48,7 +48,7 @@ export default function ExperienceCard({
 
         {/* Description */}
         <p
-          className="text-secondary-text-500 text-base mt-3 leading-6"
+          className="text-secondary-text-500 text-lg mt-3 leading-6"
           dangerouslySetInnerHTML={{ __html: description }}
         />
 

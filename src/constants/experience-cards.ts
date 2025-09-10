@@ -7,10 +7,10 @@ export const experienceCards = [
     companyName: '@nibnab.ai',
     companyLink: 'https://www.nibnab.ai',
     description: dedent`
-            Working towards launching a new innovative product with cutting edge technologies.
-            Making scalable, maintainable and performant code. <br /> <br />
-            Learning to design and architect large scale systems.
-            Actively participating in code reviews and contributing to the overall development process.
+            Developed AI products for consulting clients. <br /> <br />
+            Built multiple MVP's. <br /> <br />
+            Worked on complex RAG and Agentic systems and pipelines. <br /> <br />
+            Actively participated in fundraising, competition research and competitivness analysis.
         `,
     technologies: [
       'TypeScript',
@@ -36,10 +36,9 @@ export const experienceCards = [
     companyName: '@nibnab.ai',
     companyLink: 'https://www.nibnab.ai',
     description: dedent`
-            Improved an existing codebase.
-            Leveraged the latest LLM models and tools. <br /> <br />
-            Learned how to manipulate digital audio data.
-            Managed real-world problems - memory management, services ratelimiting and failures, etc.
+            Created new features for a large scale product. <br /> <br />
+            Built an entire AI pipeline and internal tool for AI Content Generation. <br /> <br />
+            Handled "real-world" problems professional applications face.
         `,
     technologies: [
       'TypeScript',
@@ -64,36 +63,10 @@ export const experienceCards = [
     companyName: '@Cost-Effective',
     companyLink: 'https://www.costeffective.software/bg',
     description: dedent`
-            Developed a full-stack web application for a client.
-            Learned how to work with a team and how to manage a project.
-            Learned how to work with a client and how to manage their expectations.
+            Developed a full-stack web application for a client. <br /> <br />
+            Learned teamwork and project management. <br /> <br />
+            Learned client communication and management.
         `,
     technologies: ['TypeScript', 'Angular', 'Github', 'RxJS'],
-  },
-  {
-    period: 'JAN 2023 - AUG 2024',
-    jobTitle: 'JavaScript Web Developer',
-    companyName: '@Softuni',
-    companyLink: 'https://softuni.bg',
-    description: dedent`
-            Started learning web development and JavaScript from scratch.
-            Managed to reach a full-stack web development knowledge and kick-started my career.
-        `,
-    technologies: [
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Node.js',
-      'Express',
-      'Angular',
-      'Github',
-      'RxJS',
-    ],
-    links: [
-      {
-        name: 'Certificates',
-        link: 'https://softuni.bg',
-      },
-    ],
   },
 ];
