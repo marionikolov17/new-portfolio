@@ -2,7 +2,7 @@ import dedent from 'dedent';
 
 export const experienceCards = [
   {
-    period: 'MAR 2025 - PRESENT',
+    period: 'MAR 2025 - OCT 2025',
     jobTitle: 'Junior Software Engineer',
     companyName: '@nibnab.ai',
     companyLink: 'https://www.nibnab.ai',
