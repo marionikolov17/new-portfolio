@@ -7,7 +7,7 @@ export const experienceCards = [
     companyName: '@SAP',
     companyLink: 'https://www.sap.com',
     description: '',
-    technologies: []
+    technologies: [],
   },
   {
     period: 'MAR 2025 - OCT 2025',
