@@ -6,6 +6,7 @@ export const experienceCards = [
     jobTitle: 'Associate Developer',
     companyName: '@SAP',
     companyLink: 'https://www.sap.com',
+    description: '',
     technologies: []
   },
   {
