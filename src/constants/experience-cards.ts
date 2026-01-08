@@ -2,6 +2,14 @@ import dedent from 'dedent';
 
 export const experienceCards = [
   {
+    period: 'JAN 2026 - PRESENT',
+    jobTitle: 'Associate Developer',
+    companyName: '@SAP',
+    companyLink: 'https://www.sap.com',
+    description: '',
+    technologies: [],
+  },
+  {
     period: 'MAR 2025 - OCT 2025',
     jobTitle: 'Junior Software Engineer',
     companyName: '@nibnab.ai',
