@@ -52,28 +52,27 @@ export default function AboutSection() {
               variants={itemVariants}
             >
               <motion.p
-                className="text-secondary-text-500 text-lg leading-relaxed"
+                className="text-secondary-text-500 text-lg leading-relaxed text-justify sm:text-start"
                 variants={itemVariants}
               >
                 Hello! I am{' '}
                 <span className="text-primary-text-500 font-semibold">
                   Mario Nikolov
                 </span>
-                . I enjoy solving problems and learning new things along the
-                way. My passion is designing systems and developing ready to use
-                products that are{' '}
-                <span className="text-blue-400">scalable</span> and{' '}
-                <span className="text-blue-400">easy to maintain</span>.
+                . I am a motivated full-stack developer with hands-on experience
+                building <span className="text-blue-400">reliable</span>, and{' '}
+                <span className="text-blue-400">user-focused</span>{' '}
+                applications. What drives me is using technology to solve real
+                problems in a structured and meaningful way.{' '}
               </motion.p>
 
               <motion.p
-                className="text-secondary-text-700 mt-6 text-lg leading-relaxed"
+                className="text-secondary-text-700 mt-6 text-lg leading-relaxed text-justify sm:text-start"
                 variants={itemVariants}
               >
-                I always look for new challenges and opportunities to grow. My
-                biggest goal is to become a person that can be{' '}
-                <span className="text-blue-400">trusted</span> and everyone can
-                rely on.
+                I consider myself disciplined, positive, and committed to
+                continuous learning - qualities that help me perform well in
+                collaborative, fast-paced engineering environments.
               </motion.p>
             </motion.div>
 
