@@ -81,7 +81,7 @@ export default function HeroSection() {
           className="text-secondary-text-400 text-3xl sm:text-5xl lg:text-6xl font-bold"
           variants={itemVariants}
         >
-          <span className="text-blue-400">Junior</span> Software Engineer
+          <span className="text-blue-400">Software</span> Developer
         </motion.h2>
 
         <motion.p
