@@ -5,9 +5,9 @@ export default function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Mario Nikolov',
-    jobTitle: 'Junior Software Engineer',
+    jobTitle: 'Software Developer',
     description:
-      'Passionate Junior Software Engineer specializing in modern web technologies including React, Next.js, TypeScript, and Node.js.',
+      'Passionate Software Developer specializing in modern web technologies including React, Next.js, TypeScript, and Node.js.',
     url: 'https://www.marionikolovdev.com',
     image: 'https://www.marionikolovdev.com/images/mario-for-portfolio.png',
     email: 'marionikolovdev@gmail.com',

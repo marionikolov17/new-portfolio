@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-secondary-text-600 text-sm">
-            © 2025 Mario Nikolov. All rights reserved.
+            © 2026 Mario Nikolov. All rights reserved.
           </p>
 
           <motion.button

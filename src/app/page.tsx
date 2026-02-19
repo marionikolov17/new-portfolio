@@ -3,16 +3,15 @@ import { NavigationProvider } from '@/context/navigation-context';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mario Nikolov - Junior Software Engineer | Full-Stack Developer',
+  title: 'Mario Nikolov - Software Developer',
   description:
-    'Mario Nikolov is a passionate Junior Software Engineer specializing in modern web technologies including React, Next.js, TypeScript, and Node.js. Building scalable applications and innovative solutions.',
+    'Mario Nikolov is a passionate Software Developer specializing in modern web technologies including React, Next.js, TypeScript, and Node.js. Building scalable applications and innovative solutions.',
   creator: 'Mario Nikolov',
   publisher: 'Mario Nikolov',
   authors: [{ name: 'Mario Nikolov' }],
   keywords: [
     'Mario Nikolov',
     'Software Engineer',
-    'Junior Developer',
     'Full Stack Developer',
     'Frontend Developer',
     'Backend Developer',
@@ -49,9 +48,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'Mario Nikolov - Junior Software Engineer | Full-Stack Developer',
+    title: 'Mario Nikolov - Software Developer',
     description:
-      'Mario Nikolov is a passionate Junior Software Engineer specializing in modern web technologies including React, Next.js, TypeScript, and Node.js. Building scalable applications and innovative solutions.',
+      'Mario Nikolov is a passionate Software Developer specializing in modern web technologies including React, Next.js, TypeScript, and Node.js. Building scalable applications and innovative solutions.',
     url: 'https://www.marionikolovdev.com',
     siteName: 'Mario Nikolov Portfolio',
     images: [
@@ -59,16 +58,16 @@ export const metadata: Metadata = {
         url: '/images/opengraph.png',
         width: 1200,
         height: 630,
-        alt: 'Mario Nikolov - Junior Software Engineer Portfolio',
+        alt: 'Mario Nikolov - Software Developer Portfolio',
         type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mario Nikolov - Junior Software Engineer',
+    title: 'Mario Nikolov - Software Developer',
     description:
-      'Passionate Junior Software Engineer building scalable applications with modern web technologies.',
+      'Passionate Software Developer building scalable applications with modern web technologies.',
     images: ['/images/opengraph.png'],
     creator: '@marionikolov',
   },
