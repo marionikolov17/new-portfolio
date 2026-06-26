@@ -49,6 +49,7 @@ export default function StructuredData() {
         },
       },
     ],
+    award: ['Best Prototype Award - SAP Innoweeks 2026'],
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://www.marionikolovdev.com',
