@@ -129,7 +129,7 @@ function AwardCard({
           {description.map((paragraph, index) => (
             <p
               key={index}
-              className="text-secondary-text-300 text-base md:text-lg leading-relaxed text-justify sm:text-start"
+              className="text-secondary-text-300 text-lg leading-relaxed text-justify sm:text-start"
             >
               {paragraph}
             </p>
