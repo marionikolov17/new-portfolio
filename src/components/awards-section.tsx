@@ -125,7 +125,7 @@ function AwardCard({
           </Link>
         </div>
 
-        <div className="flex flex-col gap-y-3 mt-4">
+        <div className="flex flex-col gap-y-6 mt-4">
           {description.map((paragraph, index) => (
             <p
               key={index}

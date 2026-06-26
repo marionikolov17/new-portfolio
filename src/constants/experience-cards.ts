@@ -6,8 +6,23 @@ export const experienceCards = [
     jobTitle: 'Associate Developer',
     companyName: '@SAP',
     companyLink: 'https://www.sap.com',
-    description: '',
-    technologies: [],
+    description: dedent`
+            Building Enterprise AI solutions for customers.
+    `,
+    technologies: [
+      'SAP BTP',
+      'SAP AI Core',
+      'SAP S/4HANA',
+      'SAP CAP',
+      'SAP Fiori',
+      'SAPUI5',
+      'AI Native',
+      'Cloud Native',
+      'CI/CD',
+      'System Design',
+      'System Architecture',
+      'ERP',
+    ],
   },
   {
     period: 'MAR 2025 - OCT 2025',
