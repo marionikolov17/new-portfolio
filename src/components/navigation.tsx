@@ -7,6 +7,7 @@ import {
   IoHomeOutline,
   IoInformationCircleOutline,
   IoMailOutline,
+  IoTrophyOutline,
 } from 'react-icons/io5';
 import { IconType } from 'react-icons';
 import { CodeForkSvg } from './constants/tech-icons';
@@ -50,6 +51,7 @@ export default function Navigation() {
               Icon={IoInformationCircleOutline}
               text="About Me"
             />
+            <NavItem href="#awards" Icon={IoTrophyOutline} text="Awards" />
             <NavItem
               href="#experience"
               Icon={IoBriefcaseOutline}

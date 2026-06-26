@@ -44,11 +44,11 @@ export default function AboutSection() {
           </motion.div>
 
           <motion.div
-            className="w-full flex flex-col-reverse md:flex-row gap-y-8 mt-8"
+            className="w-full flex flex-col-reverse md:flex-row md:items-center gap-y-10 md:gap-x-12 mt-8"
             variants={containerVariants}
           >
             <motion.div
-              className="grow shrink-0 max-w-full md:max-w-[60%] flex flex-col md:pe-12"
+              className="grow shrink-0 max-w-full md:max-w-[58%] flex flex-col"
               variants={itemVariants}
             >
               <motion.p
@@ -59,44 +59,55 @@ export default function AboutSection() {
                 <span className="text-primary-text-500 font-semibold">
                   Mario Nikolov
                 </span>
-                . I am a motivated full-stack developer with hands-on experience
-                building <span className="text-blue-400">reliable</span>, and{' '}
-                <span className="text-blue-400">user-focused</span>{' '}
-                applications. What drives me is using technology to solve real
-                problems in a structured and meaningful way.{' '}
+                , a software developer at{' '}
+                <span className="text-blue-400">SAP</span>. I build custom{' '}
+                <span className="text-blue-400">enterprise applications</span>{' '}
+                and <span className="text-blue-400">agentic systems</span> that
+                bring AI into core business processes. What drives me is solving
+                problems with real business value, in a structured and
+                deliberate way.
               </motion.p>
 
               <motion.p
                 className="text-secondary-text-700 mt-6 text-lg leading-relaxed text-justify sm:text-start"
                 variants={itemVariants}
               >
-                I consider myself disciplined, positive, and committed to
-                continuous learning - qualities that help me perform well in
-                collaborative, fast-paced engineering environments.
+                I care about understanding the <em>why</em> behind a problem
+                before writing code - and I learn fast, which is what lets me
+                move quickly in collaborative, high-stakes engineering
+                environments.
               </motion.p>
             </motion.div>
 
             <motion.div
-              className="grow shrink-0 relative flex justify-center md:justify-start"
+              className="grow shrink-0 relative flex justify-center md:justify-end"
               variants={itemVariants}
             >
               <motion.div
-                className="w-64 h-64 z-10 flex items-center justify-center overflow-hidden rounded-2xl relative bg-gradient-to-br from-background-300 to-background-400 shadow-2xl border border-border-600"
-                initial={{ opacity: 0, scale: 0.8 }}
+                className="group relative"
+                initial={{ opacity: 0, scale: 0.85 }}
                 whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: [0.25, 0.25, 0, 1] }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.3 },
-                }}
               >
-                <Image
-                  src="/images/mario-for-portfolio.png"
-                  alt="Mario Nikolov"
-                  width={256}
-                  height={256}
-                  className="w-full h-full object-contain filter drop-shadow-lg"
-                />
+                {/* Soft ambient glow */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/20 to-purple-600/20 blur-2xl rounded-3xl opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+
+                {/* Offset accent frame */}
+                <div className="absolute -bottom-4 -right-4 w-full h-full rounded-2xl border border-blue-400/30 hidden sm:block" />
+
+                {/* Portrait */}
+                <div className="relative z-10 w-60 sm:w-72 aspect-[4/5] overflow-hidden rounded-2xl bg-gradient-to-br from-background-300 to-background-400 shadow-2xl border border-border-600">
+                  <Image
+                    src="/images/mario-headshot-2026.png"
+                    alt="Mario Nikolov"
+                    width={576}
+                    height={720}
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {/* Subtle bottom fade to blend with theme */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background-500/40 to-transparent pointer-events-none" />
+                </div>
               </motion.div>
             </motion.div>
           </motion.div>

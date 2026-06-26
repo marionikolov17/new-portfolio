@@ -4,6 +4,7 @@ import Navigation from './navigation';
 import FloatingElements from './floating-elements';
 import HeroSection from './hero-section';
 import AboutSection from './about-section';
+import AwardsSection from './awards-section';
 import ExperienceSection from './experience-section';
 import ProjectsSection from './projects-section';
 import ContactSection from './contact-section';
@@ -21,6 +22,7 @@ export default function LayoutHome() {
       >
         <HeroSection />
         <AboutSection />
+        <AwardsSection />
         <ExperienceSection />
         <ProjectsSection />
         <ContactSection />
